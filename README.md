@@ -1,17 +1,11 @@
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
-[Express'](https://www.npmjs.com/package/express) application generator.
-
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Linux Build][travis-image]][travis-url]
-[![Windows Build][appveyor-image]][appveyor-url]
-[![Gratipay][gratipay-image]][gratipay-url]
+[Express'](https://www.npmjs.com/package/express) app generator, for CoffeeScript
 
 ## Installation
 
 ```sh
-$ npm install -g express-generator
+$ echo "I'll let you know when I find out"
 ```
 
 ## Quick Start
@@ -21,7 +15,7 @@ The quickest way to get started with express is to utilize the executable `expre
 Create the app:
 
 ```bash
-$ express --view=hbs /tmp/foo && cd /tmp/foo
+$ express-coffee --view=pug /niceapp && cd /niceapp
 ```
 
 Install dependencies:
