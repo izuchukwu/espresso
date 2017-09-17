@@ -1,5 +1,5 @@
 {
-	"name": "generator-coffee",
+	"name": "espresso",
 	"description": "Express' app generator, for CoffeeScript",
 	"version": "4.15.0+coffee",
 	"author": "Izuchukwu Elechi <izuchukwuelechi@gmail.com>",
@@ -25,7 +25,7 @@
 		"coffee",
 		"coffeescript"
 	],
-	"repository": "izuchukwu/generator-coffee",
+	"repository": "izuchukwu/espresso",
 	"license": "MIT",
 	"dependencies": {
 		"commander": "2.10.0",
@@ -36,7 +36,7 @@
 	"main": "bin/express-cli.js",
 	"preferGlobal": true,
 	"bin": {
-		"express-coffee": "./bin/express-cli.js"
+		"espresso": "./bin/express-cli.js"
 	},
 	"devDependencies": {
 		"eslint": "3.19.0",
