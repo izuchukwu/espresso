@@ -1,4 +1,4 @@
-![Espresso](https://raw,githubusercontent.com/izuchukwu/espresso/master/espresso.svg)
+![Espresso](https://raw.githubusercontent.com/izuchukwu/espresso/master/espresso.svg)
 
 [Express'](https://www.npmjs.com/package/express) app generator, for CoffeeScript
 
