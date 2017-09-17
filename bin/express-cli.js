@@ -143,8 +143,8 @@ function createApplication (name, path) {
   }
 
   // JavaScript
-  var app = loadTemplate('js/app.js')
-  var www = loadTemplate('js/www')
+  var app = loadTemplate('js/app.coffee')
+  var www = loadTemplate('js/wwwc')
 
   // App name
   www.locals.name = name
@@ -180,8 +180,8 @@ function createApplication (name, path) {
     })
 
     mkdir(path + '/routes', function () {
-      copyTemplate('js/routes/index.js', path + '/routes/index.js')
-      copyTemplate('js/routes/users.js', path + '/routes/users.js')
+      copyTemplate('js/routes/index.coffee', path + '/routes/index.coffee')
+      copyTemplate('js/routes/users.coffee', path + '/routes/users.coffee')
       complete()
     })
 
@@ -270,7 +270,7 @@ function createApplication (name, path) {
       version: '0.0.0',
       private: true,
       scripts: {
-        start: 'node ./bin/www'
+        start: 'coffee ./bin/www'
       },
       dependencies: {
         'body-parser': '~1.17.1',
@@ -329,8 +329,8 @@ function createApplication (name, path) {
     pkg.dependencies = sortedObject(pkg.dependencies)
 
     // write files
-    write(path + '/package.json', JSON.stringify(pkg, null, 2) + '\n')
-    write(path + '/app.js', app.render())
+    write(path + '/package.json', JSON.stringify(pkg, null, '\t') + '\n')
+    write(path + '/app.coffee', app.render())
     mkdir(path + '/bin', function () {
       write(path + '/bin/www', www.render(), MODE_0755)
       complete()
